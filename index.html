@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+
+  <style>
+
+  .container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: auto;
+    width: 350px;
+    height: 704px;
+  }
+  .container::before{
+    background-image: url("back.png");
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    transition: all 1s;
+  }
+  .container::after{
+    background-image: url("front.png");
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    transition: all 1s;
+  }
+
+  .container:hover::before{
+    transform: translateX(-10%);
+  }
+  .container:hover::after{
+    transform: translateX(10%);
+  }
+
+  </style>
+  </head>
+
+  <body>
+    <div class="container">
+
+
+    </div>
+
+
+  </body>
+</html>
